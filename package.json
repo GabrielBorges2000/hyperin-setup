@@ -10,8 +10,8 @@
     "build:dev": "pnpm env:load tsup",
     "env:load": "dotenv -e .env --",
     "format": "biome format --write ",
-    "lint": "biome lint --write --unsafe",
-    "check": "biome check --write --unsafe && pnpm run check-types",
+    "lint": "biome lint --write",
+    "check": "biome check --write",
     "check-types": "tsc --noEmit",
     "db:migrate": "pnpm env:load prisma migrate dev",
     "db:reset": "pnpm env:load prisma migrate reset",
@@ -36,7 +36,7 @@
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "7.3.0",
     "dotenv": "^17.4.2",
-    "hyperin": "0.0.1-beta.11",
+    "hyperin": "0.1.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {

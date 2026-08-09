@@ -6,7 +6,7 @@ import { registerDocs } from "./lib/scalar";
 const app = hyperin();
 app.use(json());
 
-registeRoutes(app);
 registerDocs(app);
+registeRoutes(app);
 
 export { app };
