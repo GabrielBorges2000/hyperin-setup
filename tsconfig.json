@@ -21,6 +21,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/database/*": ["./src/database/*"],
+      "hyperin/validation": ["./node_modules/hyperin/dist/validation"],
+      "hyperin/response": ["./node_modules/hyperin/dist/response"],
     },
   },
 }

@@ -26,6 +26,14 @@ export class UserPrismaRepository implements IUserRepository {
     });
   }
 
+  async getByEmail(email: string): Promise<User | null> {
+    return this.db.user.findFirst({
+      where: {
+        email,
+      },
+    });
+  }
+
   async update(id: string, data: UserUpdateInput): Promise<User> {
     return this.db.user.update({
       data,
